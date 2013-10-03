@@ -10,7 +10,8 @@ class control extends CI_Controller {
 
 	}
 	public function loadpage()
-	{	
+	{
+	$this->load->view('common/header');	
 	$this->load->view('HnF/head');
 	$this->load->view('signup');		
 	$this->load->view('HnF/footer');
@@ -19,7 +20,8 @@ class control extends CI_Controller {
 
 	public function whatislinkedin()
 	{
-	$this->load->view('style');
+	$this->load->view('common/header');	
+	//$this->load->view('style');
 	$this->load->view('HnF/head');
 	$this->load->view('whatis');
 	$this->load->view('HnF/footer');
@@ -27,7 +29,8 @@ class control extends CI_Controller {
 
 	public function signin()
 	{
-	$this->load->view('style');
+	$this->load->view('common/header');	
+	//$this->load->view('style');
 	$this->load->view('HnF/head');
 	$this->load->view('signin');
 	$this->load->view('HnF/footer1');
@@ -35,8 +38,9 @@ class control extends CI_Controller {
 
 	public function joinnow()
 	{
+	$this->load->view('common/header');	
 	$this->load->view('HnF/head1');
-	$this->load->view('style');
+	//$this->load->view('style');
 	$this->load->view('join1');
 	$this->load->view('HnF/footer2');
 	
@@ -44,15 +48,16 @@ class control extends CI_Controller {
 
 	public function changepw()
 	{
+	$this->load->view('common/header');	
 	$this->load->view('HnF/head');
-	$this->load->view('style');
+	//$this->load->view('style');
 	$this->load->view('changepw');
 	$this->load->view('HnF/footer1');
 	}
 	
 	public function index()
 	{
-		$this->load->view('style');
+		//$this->load->view('style');
 		$this->loadpage();
 		
 
@@ -60,16 +65,18 @@ class control extends CI_Controller {
 
 	public function mycountry()
 	{
+	$this->load->view('common/header');	
 	$this->load->view('HnF/head');
-	$this->load->view('style');
+	//$this->load->view('style');
 	$this->load->view('country');
 	$this->load->view('HnF/footer1');
 	}
 
 	public function useragreement()
 	{
+	$this->load->view('common/header');	
 	$this->load->view('HnF/head');
-	$this->load->view('style');
+	//$this->load->view('style');
 	$this->load->view('agreement');
 	$this->load->view('HnF/footer');
 	}	

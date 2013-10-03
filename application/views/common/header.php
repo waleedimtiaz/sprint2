@@ -12,6 +12,7 @@
     
     <?php echo link_css('bootstrap'); ?>
     <?php echo link_css('style') ?>
+    <?php echo link_css('mystyle') ?>
     <style type="text/css">
       body {
         padding-top: 60px;
